@@ -1,0 +1,171 @@
+<html>
+<head>
+<link href="asset/css/style.css rel="stylesheet">
+<title> index </title>
+</head>
+
+<body bgcolor="#778899">
+
+<hr>
+<br>
+<center>
+<font color="red">
+<b><h1> THE SUPER MARIO BROS. MOVIE 2023 </b></h1>
+<br>
+</font>
+<hr>
+ 
+<br><br><br>
+
+<!--- INSERTING VIDEO --->
+<video controls autoplay muted>
+<source src="asset/video/peaches.mp4"type="video/mp4">
+</video>
+
+<br><br><br><br>
+
+<video controls width="560">
+<source src="asset/video/training.mp4"type="video/mp4">
+</video>
+
+<br><br><br>
+
+<!---INSERTING VIDEO FROM YT--->
+<br>
+<font size="25" color="green">
+<b> VIDEO FROM YOUTUBE </b>
+<br><br>
+</font>
+
+<br><br><br>
+
+<!---INSERTING MARQUEE--->
+<hr>
+<br>
+<marquee direction="down" scrollamount="5">
+<center><h1> VIDEO 1 </h1></center>
+</marquee>
+<br><br>
+<hr>
+
+<br><br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NQSWeEGIVXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br><br><br>
+
+<!---INSERTING MARQUEE--->
+<hr>
+<br>
+<marquee>
+<center><h1> VIDEO 2 </h1></center>
+</marquee>
+<br><br>
+<hr>
+
+<br><br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e-3sYL7vJTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+<br><br><br><br>
+
+<!--- INSERTING AUDIO --->
+<hr> <center>
+<b> PLAYLIST </b>
+<hr>
+<br>
+
+	bazzi
+<br>
+<audio controls>
+<source src="asset/audio/bazzi.mp3" type="audio/mp3">
+</audio>
+
+<br><br><br>
+	selena
+<br>
+<audio controls>
+<source src="asset/audio/selena.mp3" type="audio/mp3">
+</audio>
+<br><br><br>
+	semua berlalu
+<br>
+<audio controls>
+<source src="asset/audio/semuaberlalu.mp3" type="audio/mp3">
+</audio>
+<br><br><br>
+	winner
+<br>
+<audio controls>
+<source src="asset/audio/winner.mp3" type="audio/mp3">
+</audio>
+<br><br><br>
+	winter bear
+<br>
+<audio controls>
+<source src="asset/audio/winterbear.mp3" type="audio/mp3">
+</audio>
+<br><br><br>
+
+<!--- INSERT PDF FILE--->
+<hr>
+<br>
+<font size="25"
+<b> PDF </b>
+<br>
+</font>
+<hr>
+
+<br><br><br>
+
+<iframe src="asset/pdf/IMD311.pdf">
+</iframe > 
+
+<br><br><br>
+
+<hr>
+<br>
+<b>DIGITAL CLOCK</b>
+<br><br>
+<hr>
+</center>
+<br><br><br>
+
+<!---TO CALL THE CSS--->
+<div id="clock"> 8:10:45 </div> 
+<!---TO LINK FOR A CURRENT TIME--->
+<script src="clock2.js"> </script>
+
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    am_pm = "AM";
+  
+    if (hour > 12) {
+        hour -= 12;
+        am_pm = "PM";
+    }
+    if (hour == 0) {
+        hr = 12;
+        am_pm = "AM";
+    }
+  
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+  
+    let currentTime = hour + ":" 
+            + min + ":" + sec + am_pm;
+  
+    document.getElementById("clock")
+            .innerHTML = currentTime;
+}
+showTime();
+</script>
+
+</body>
+</html>
